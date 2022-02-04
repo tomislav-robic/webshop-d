@@ -1,10 +1,10 @@
 import React from 'react';
 import './ImageCard.css';
 
-function ImageCard({image, category}) {
+function ImageCard({image, category, imageClassName}) {
     return (
         <div className="info-container">        
-            <img className='card-image' src={image} alt=""/>
+            <img className={imageClassName} src={image} alt=""/>
             <div className='info'> 
                 <p>{category}</p>
                 <p>SHOP NOW</p>
