@@ -1,0 +1,12 @@
+.RecommendedCategory {
+    margin: 50px;
+}
+
+.category-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+

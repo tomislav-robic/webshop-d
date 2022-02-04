@@ -1,0 +1,20 @@
+.info-container {
+    border: 1px solid black;
+}
+
+.info-container img, .info-container div {
+    border: 1px solid red;
+}
+
+.info-container div {
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    margin-top: 0;
+    background-color: azure;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+
