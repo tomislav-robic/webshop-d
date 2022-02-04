@@ -1,13 +1,14 @@
+p {
+    text-align: center;
+}
 .info-container {
     position: relative;
     height: 300px;
     width: 500px;
-    border: 1px solid black;
 }
 
 .info-container img, .info-container div {
     position: absolute;
-    border: 1px solid red;
 }
 
 .info-container div {
@@ -32,4 +33,13 @@
     height: 100%;
 }
 
+.row-1-image:hover {
+    transform: scale(1.05);
+    transition-duration: 2s;
+  }
+  
+  .row-2-image:hover {
+    transform: scale(1.05);
+    transition-duration: 2s;
+  }
 

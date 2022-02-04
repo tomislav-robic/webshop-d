@@ -7,12 +7,12 @@ function Header() {
     return (
         <div className="header">
             <div>
-                <img className='header_logo' src={logo} alt="" />
+                <a href="/"><img className='header_logo' src={logo} alt="" /></a>
             </div>
 
             <div className="header_right">
                 <p>ALGEBRA SHOP</p>                
-                <p>SIGN OUT</p>
+                <a href="/Login">SIGN OUT</a>
                 <img className='header_basket' src={basket} alt="" />
             </div>
 

@@ -1,0 +1,14 @@
+.Login{
+    margin-left: 200px;
+}
+
+.DivBlock {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+h4 {
+    color: grey;
+}
