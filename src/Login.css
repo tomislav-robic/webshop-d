@@ -1,5 +1,5 @@
 .Login{
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .DivBlock {
@@ -11,4 +11,13 @@
 
 h4 {
     color: grey;
+}
+
+.Form {
+    display: grid;
+    position: relative;
+}
+
+.signUp {
+    margin-top: 10px;
 }

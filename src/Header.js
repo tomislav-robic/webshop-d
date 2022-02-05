@@ -11,8 +11,8 @@ function Header() {
             </div>
 
             <div className="header_right">
-                <p>ALGEBRA SHOP</p>                
-                <a href="/Login">SIGN OUT</a>
+                <a className="link" href="/Login">ALGEBRA SHOP</a>                
+                <a className="link" href="/Login">SIGN OUT</a>
                 <img className='header_basket' src={basket} alt="" />
             </div>
 

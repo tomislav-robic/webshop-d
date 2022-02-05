@@ -1,5 +1,8 @@
 .app {
   margin: 0;
   padding: 30px;
-  font-family: sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }

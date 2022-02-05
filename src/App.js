@@ -3,7 +3,7 @@ import "./Header.css"
 import './App.css';
 import RecommendedCategory from "./RecommendedCategory.js";
 import Login from "./Login.js";
-import {BrowserRouter as Router, Switch, Routes, Route} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   return (

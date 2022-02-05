@@ -1,4 +1,9 @@
-a {text-decoration: none;}
+.link {
+    text-decoration: none !important;
+    color: black;
+    margin: 15px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -7,7 +12,7 @@ a {text-decoration: none;}
 }
 
 .header_logo {
-    width: 35px;
+    width: 65px;
     padding: 10px;
 }
 
