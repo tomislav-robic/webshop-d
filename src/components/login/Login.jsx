@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import {TextField} from '@material-ui/core'
 import Button from 'react-bootstrap/Button';
-import {signInWithGoogle, auth} from './firebase-config'
+import {signInWithGoogle, auth} from '../../firebase-config'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth"
 
 function Login()  {

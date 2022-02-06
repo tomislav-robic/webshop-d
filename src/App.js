@@ -1,13 +1,19 @@
 import React from 'react'
-import Header from "./Header.jsx"
-import "./Header.css"
+import Header from "./components/header/Header.jsx"
+import "./components/header/Header.css"
 import './App.css';
-import RecommendedCategory from "./RecommendedCategory.jsx";
-import Login from "./Login.jsx";
+import RecommendedCategory from "./components/recommended-category/RecommendedCategory.jsx";
+import Login from "./components/login/Login.jsx";
+import Hats from "./components/hats/Hats.jsx";
+import Jackets from "./components/jackets/Jackets.jsx";
+import Sneakers from "./components/sneakers/Sneakers.jsx";
+import Womens from "./components/womens/Womens.jsx";
+import Mens from "./components/mens/Mens.jsx";
+import AlgebraShop from "./components/algebra-shop/AlgebraShop.jsx";
+import ShoppingBag from "./components/shopping-bag/ShoppingBag.jsx";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { Component } from "react";
 import {auth} from "./firebase-config"
-import { useNavigate } from "react-router-dom";
 
 export class App extends Component {
 
@@ -43,6 +49,13 @@ export class App extends Component {
             <Routes>
               <Route path="/" element={<RecommendedCategory />}/>
               <Route path="/Login" element={<Login />}/>
+              <Route path="/Hats" element={<Hats />}/>
+              <Route path="/Jackets" element={<Jackets />}/>
+              <Route path="/Sneakers" element={<Sneakers />}/>
+              <Route path="/Womens" element={<Womens />}/>
+              <Route path="/Mens" element={<Mens />}/>
+              <Route path="/AlgebraShop" element={<AlgebraShop />}/>
+              <Route path="/ShoppingBag" element={<ShoppingBag />}/>
             </Routes>
           </div>  
         </div>

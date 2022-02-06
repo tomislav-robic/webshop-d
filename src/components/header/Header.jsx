@@ -1,14 +1,11 @@
 import React from 'react'
-import logo from "./icons/algebra_crown.svg";
-import basket from "./icons/shopping-bag.svg";
+import logo from  "../../icons/algebra_crown.svg";
+import basket from "../../icons/shopping-bag.svg";
 import "./Header.css";
-import {auth} from './firebase-config'
+import {auth} from '../../firebase-config'
 
 
 class Header extends React.Component {
-    constructor () {
-        super();
-    }
 
     SignOut() {
         console.log("hey");
@@ -25,15 +22,15 @@ class Header extends React.Component {
                 </div>
     
                 <div className="header_right">
-                    <a className="link" href="/Login">ALGEBRA SHOP</a>    
+                    <a className="link" href="/AlgebraShop">ALGEBRA SHOP</a>    
                     {localStorage.getItem('user') ? 
                     (<a className="link" onClick = {() => this.SignOut()} href="/Login">SIGN OUT</a>) 
                     : 
                     (<a className="link" href="/Login">SIGN IN</a>)}           
-                    <div><img className='header_basket' src={basket} alt="" /></div>
+                    <div><a className="link" href="/ShoppingBag"><img className='header_basket' src={basket} alt="" /></a></div>
                 </div>
 
-                <div><a className="link" href="/Login"><img className='header_basket' src={basket} alt="" /></a></div>
+                
     
             </div>
         )

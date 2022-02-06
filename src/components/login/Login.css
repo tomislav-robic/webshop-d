@@ -1,12 +1,13 @@
 .Login{
-    margin-left: 300px;
+    margin-top: 100px;
+    margin-left: 200px;
 }
 
 .DivBlock {
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
-    margin: 10px;
+    margin: 20px;
 }
 
 h4 {
