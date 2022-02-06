@@ -29,9 +29,11 @@ class Header extends React.Component {
                     {localStorage.getItem('user') ? 
                     (<a className="link" onClick = {() => this.SignOut()} href="/Login">SIGN OUT</a>) 
                     : 
-                    (<a className="link" href="/Login">SIGN IN</a>)}            
-                    <img className='header_basket' src={basket} alt="" />
+                    (<a className="link" href="/Login">SIGN IN</a>)}           
+                    <div><img className='header_basket' src={basket} alt="" /></div>
                 </div>
+
+                <div><a className="link" href="/Login"><img className='header_basket' src={basket} alt="" /></a></div>
     
             </div>
         )

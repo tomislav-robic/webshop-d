@@ -7,10 +7,11 @@ import Login from "./Login.jsx";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { Component } from "react";
 import {auth} from "./firebase-config"
+import { useNavigate } from "react-router-dom";
 
 export class App extends Component {
 
-  unsubscribeFromAuth = null;
+  unsubscribeFromAuth = null; 
 
   constructor() {
     super();
@@ -25,7 +26,7 @@ export class App extends Component {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => { 
       const localUser = user;
       this.setState({currentUser: localUser}, console.log(user));
-      if (user) {localStorage.setItem("user", localUser)};
+      if (user) {localStorage.setItem("user", localUser);};
     });
   }
 
