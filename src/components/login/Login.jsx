@@ -19,7 +19,6 @@ function Login()  {
                     registerEmail,
                     registerPassword
                 );
-                console.log(user);
             } catch (error) {
                 console.log(error.message);
             }
@@ -33,7 +32,6 @@ function Login()  {
                     loginEmail,
                     loginPassword
                 );
-                console.log(user);
             } catch (error) {
                 console.log(error.message);
             }

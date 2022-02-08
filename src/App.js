@@ -4,14 +4,9 @@ import "./components/header/Header.css"
 import './App.css';
 import RecommendedCategory from "./components/recommended-category/RecommendedCategory.jsx";
 import Login from "./components/login/Login.jsx";
-import Hats from "./components/hats/Hats.jsx";
-import Jackets from "./components/jackets/Jackets.jsx";
-import Sneakers from "./components/sneakers/Sneakers.jsx";
-import Womens from "./components/womens/Womens.jsx";
-import Mens from "./components/mens/Mens.jsx";
 import AlgebraShop from "./components/algebra-shop/AlgebraShop.jsx";
 import ShoppingBag from "./components/shopping-bag/ShoppingBag.jsx";
-import Item from "./components/item/Item.jsx";
+import Finish from "./components/finish/Finish.jsx";
 import Category from "./components/category/Category.jsx";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { Component } from "react";
@@ -29,13 +24,12 @@ export class App extends Component {
       currentUser: null
     }
 
-    console.log(category_data);
   } 
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => { 
       const localUser = user;
-      this.setState({currentUser: localUser}, console.log(user));
+      this.setState({currentUser: localUser});
       if (user) {localStorage.setItem("user", localUser);};
     });
   }
@@ -60,7 +54,7 @@ export class App extends Component {
               <Route path="/Mens" element={<Category category = {category_data.mens}/>}/>
               <Route path="/AlgebraShop" element={<AlgebraShop />}/>
               <Route path="/ShoppingBag" element={<ShoppingBag />}/>
-              <Route path="/item" element={<Item item = {category_data.hats.items[0]} />}/>
+              <Route path="/Finish" element={<Finish />}/>
             </Routes>
           </div>  
         </div>

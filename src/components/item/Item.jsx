@@ -10,13 +10,10 @@ function Item({item}) {
             var result = items.find(obj => {
                 return obj.id == item.id
               });
-              console.log(result);
-            if (result === undefined) {items.push(item); console.log("1")} 
+            if (result === undefined) {items.push(item);} 
         } else {
-            console.log("2")
             items = [item];
         }
-        console.log("3")
         localStorage.setItem("items", JSON.stringify(items));
     }
 

@@ -8,7 +8,6 @@ import {auth} from '../../firebase-config'
 class Header extends React.Component {
 
     SignOut() {
-        console.log("hey");
         auth.signOut();
         localStorage.clear();
         this.render();

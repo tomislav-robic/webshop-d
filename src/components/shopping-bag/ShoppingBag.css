@@ -1,0 +1,11 @@
+.total {
+    display: flex;
+}
+
+.space {
+    margin: 15px;
+}
+
+.cartTable {
+    margin: 40px;
+}
