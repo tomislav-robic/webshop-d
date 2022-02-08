@@ -11,9 +11,12 @@ import Womens from "./components/womens/Womens.jsx";
 import Mens from "./components/mens/Mens.jsx";
 import AlgebraShop from "./components/algebra-shop/AlgebraShop.jsx";
 import ShoppingBag from "./components/shopping-bag/ShoppingBag.jsx";
+import Item from "./components/item/Item.jsx";
+import Category from "./components/category/Category.jsx";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { Component } from "react";
 import {auth} from "./firebase-config"
+import {category_data} from "./database.js"
 
 export class App extends Component {
 
@@ -26,6 +29,7 @@ export class App extends Component {
       currentUser: null
     }
 
+    console.log(category_data);
   } 
 
   componentDidMount() {
@@ -49,13 +53,14 @@ export class App extends Component {
             <Routes>
               <Route path="/" element={<RecommendedCategory />}/>
               <Route path="/Login" element={<Login />}/>
-              <Route path="/Hats" element={<Hats />}/>
-              <Route path="/Jackets" element={<Jackets />}/>
-              <Route path="/Sneakers" element={<Sneakers />}/>
-              <Route path="/Womens" element={<Womens />}/>
-              <Route path="/Mens" element={<Mens />}/>
+              <Route path="/Hats" element={<Category category = {category_data.hats}/>}/>
+              <Route path="/Jackets" element={<Category category = {category_data.jackets}/>}/>
+              <Route path="/Sneakers" element={<Category category = {category_data.sneakers}/>}/>
+              <Route path="/Womens" element={<Category category = {category_data.womens}/>}/>
+              <Route path="/Mens" element={<Category category = {category_data.mens}/>}/>
               <Route path="/AlgebraShop" element={<AlgebraShop />}/>
               <Route path="/ShoppingBag" element={<ShoppingBag />}/>
+              <Route path="/item" element={<Item item = {category_data.hats.items[0]} />}/>
             </Routes>
           </div>  
         </div>

@@ -1,0 +1,12 @@
+.caption {
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}

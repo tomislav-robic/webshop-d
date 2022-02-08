@@ -1,0 +1,24 @@
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+.itemInfo {
+    display: flex;
+}
+
+.price {
+    margin-left: 1%;
+}
+
+.name {
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
